@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -56,33 +57,33 @@
   }
   
   .navigation-link {
-    @apply text-sm font-medium text-black relative transition-all;
+    @apply text-sm font-medium text-black relative transition-all duration-300;
   }
   
-  .navigation-link::after {
-    @apply content-[''] absolute w-full scale-x-0 h-0.5 bottom-0 left-0 bg-innovisual-accent origin-bottom-right transition-transform duration-300;
+  .navigation-link:hover {
+    @apply scale-[1.02] opacity-100 blur-none;
   }
   
-  .navigation-link:hover::after {
-    @apply scale-x-100 origin-bottom-left;
+  .navigation-link:hover ~ .navigation-link {
+    @apply opacity-50 blur-[0.5px];
   }
   
-  .navigation-link.active::after {
-    @apply scale-x-100;
+  .navigation-link.active {
+    @apply font-semibold opacity-100 blur-none;
   }
-
+  
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 min-h-screen flex flex-col;
   }
   
   .button-primary {
-    @apply bg-innovisual-accent text-white px-6 py-3 rounded-md font-medium transition-all shadow-md
+    @apply bg-[#5c899d] text-white px-6 py-3 rounded-md font-medium transition-all shadow-md
     hover:shadow-lg hover:translate-y-[-2px] active:translate-y-[0px] active:shadow-md;
   }
   
   .button-secondary {
-    @apply bg-white text-innovisual border border-innovisual px-6 py-3 rounded-md font-medium transition-all
-    hover:bg-innovisual-border hover:shadow-sm active:bg-white;
+    @apply bg-white text-[#5c899d] border border-[#5c899d] px-6 py-3 rounded-md font-medium transition-all
+    hover:bg-[#f0f4f6] hover:shadow-sm active:bg-white;
   }
 
   h2.text-3xl, h2.text-4xl {
@@ -91,6 +92,12 @@
   
   h3.text-2xl {
     @apply my-8 py-3;
+  }
+
+  /* Nav logo animation styles */
+  .nav-logo-container {
+    transition: opacity 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 }
 
@@ -121,7 +128,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 25px solid #000;
+  border-top: 25px solid #5c899d;
   animation: blink 1.5s infinite;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -175,7 +182,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 25px solid #000;
+  border-top: 25px solid #5c899d;
   animation: attention-blink 1s infinite;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -236,4 +243,187 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+
+@keyframes textFadeIn {
+  0% { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text-fade-in {
+  animation: textFadeIn 1.8s ease-out forwards;
+}
+
+/* Updated marquee animations for seamless scrolling */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 40s linear infinite;
+}
+
+/* Logo opduik animatie */
+@keyframes innovisual-logo-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* Utility class voor logo-animatie */
+.animate-innovisual-logo-appear {
+  animation: innovisual-logo-appear 0.6s ease-out forwards;
+}
+
+/* Driehoek bounce animatie (desktop & mobiel) */
+@keyframes triangle-bounce {
+  0% { transform: translateY(0); }
+  10% { transform: translateY(-8px);}
+  22% { transform: translateY(0);}
+  30% { transform: translateY(-4px);}
+  40% { transform: translateY(0);}
+  100% { transform: translateY(0);}
+}
+
+/* Alleen animatie, loop elke 3.5s op desktop en mobiel */
+.animate-triangle-bounce-desktop {
+  animation: triangle-bounce 3.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+/* ---- INNOVISUAL Custom Animations for Hero Section ---- */
+
+/* Logo: slide up + fade in + blur-resolve */
+@keyframes logo-blur-fadein-up {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(20px);
+  }
+  90% {
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
+.animate-logo-blur-fadein-up {
+  animation: logo-blur-fadein-up 1.2s ease-out forwards;
+}
+
+/* Triangle: blur-fade in up, dan bounce */
+@keyframes triangle-blur-fadein-up {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(20px);
+  }
+  90% {
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
+  }
+}
+.animate-triangle-blur-fadein-up {
+  animation: triangle-blur-fadein-up 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes triangle-bounce {
+  0% { transform: translateY(0);}
+  10% { transform: translateY(-8px);}
+  22% { transform: translateY(0);}
+  30% { transform: translateY(-4px);}
+  40% { transform: translateY(0);}
+  100% { transform: translateY(0);}
+}
+.animate-triangle-bounce-desktop {
+  animation: triangle-bounce 3.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.triangle-blur-fadein {
+  opacity: 0;
+  filter: blur(4px);
+  animation: triangle-blur-fadein-up 0.8s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+/* Navbar: fadeIn, blur-out & slide-down */
+@keyframes navbar-blur-fadein-down {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(-20px);
+  }
+  90% {
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+.animate-navbar-blur-fadein-down {
+  animation: navbar-blur-fadein-down 0.8s ease-out forwards;
+}
+
+@layer utilities {
+  .animate-soft-fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms, transform 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    will-change: opacity, transform;
+  }
+  .animate-soft-fade-up.inview {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .animate-soft-fade-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms, transform 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0ms;
+    will-change: opacity, transform;
+  }
+  .animate-soft-fade-right.inview {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .animate-soft-blur-in {
+    filter: blur(4px);
+    transition: 
+      filter 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+      opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+      transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .animate-soft-blur-in.inview {
+    filter: blur(0);
+  }
 }

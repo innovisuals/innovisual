@@ -1,19 +1,30 @@
-import * as React from "react"
 
-const MOBILE_BREAKPOINT = 768
+import { useState, useEffect } from "react";
 
-export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+/**
+ * Hook om te bepalen of de huidige weergave mobiel is (scherm smaller dan 1024px)
+ * @returns boolean - True als het scherm kleiner is dan 1024px
+ */
+export function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    // Initiële waarde direct instellen op basis van window.innerWidth
+    return typeof window !== 'undefined' ? window.innerWidth < 1024 : false;
+  });
 
-  React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
-    }
-    mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
-    return () => mql.removeEventListener("change", onChange)
-  }, [])
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    
+    // Event listener voor het detecteren van wijzigingen in venstergrootte
+    window.addEventListener("resize", checkIfMobile);
+    
+    // Controleer nogmaals bij montage om edge cases af te handelen
+    checkIfMobile();
+    
+    // Cleanup bij unmount
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
 
-  return !!isMobile
+  return isMobile;
 }

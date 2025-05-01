@@ -22,15 +22,15 @@ const ProcessStep: React.FC<ProcessStepProps> = ({
   return (
     <div 
       className={cn(
-        "flex flex-col items-center text-center animate-fade-in",
+        "flex flex-col items-center text-center animate-fade-in p-6 rounded-lg bg-[#5C899D]",
         !isLast && "process-step",
         className
       )}
       style={{ animationDelay: `${animationDelay}ms` }}
     >
-      <div className="mb-6 text-4xl text-innovisual">{icon}</div>
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-innovisual-muted text-sm max-w-xs">{description}</p>
+      <div className="mb-6 text-4xl text-[#FFFCEF]">{icon}</div>
+      <h3 className="text-xl font-semibold mb-3 text-white">{title}</h3>
+      <p className="text-white/80 text-sm max-w-xs">{description}</p>
     </div>
   );
 };
