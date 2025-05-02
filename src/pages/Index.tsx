@@ -18,7 +18,7 @@ const Index: React.FC = () => {
 
   // Titel instellen
   useEffect(() => {
-    document.title = "INNOVISUAL";
+    document.title = "INNOVISUAL – 3D & AR integratie";
   }, []);
 useEffect(() => {
   const hash = location.hash;
