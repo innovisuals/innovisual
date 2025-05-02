@@ -166,7 +166,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
           {selectedReason === "question" && (
             <div className="space-y-2 pt-2">
               <Textarea
-                placeholder="Laat hier een korte toelichting achter (optioneel)"
+                placeholder="Laat hier een korte toelichting achter."
                 rows={2}
                 {...register("message")}
                 className="w-full h-[150px] text-lg font-medium bg-[#FFFCEF] text-[#5C899D] placeholder-[#5C899D] rounded-lg px-4 py-3 border border-[#5C899D] resize-none"
