@@ -55,7 +55,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
                               <img
   src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
   alt="IconLogo"
-  className="w-12 h-auto"
+  className="w-28 h-auto"
 />
                 <a
                   href="https://www.instagram.com/innovisual.nl"
@@ -72,7 +72,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             {/* Mobiel copyright */}
             <div className="text-center mt-12 mb-8">
               <p className={`text-xs leading-none tracking-tight opacity-70 ${textColor}`}>
-                &copy; 2025 INNOVISUAL. All Rights Reserved.
+                &copy; 2025 INNOVISUAL.
               </p>
             </div>
           </>
