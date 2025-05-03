@@ -41,8 +41,8 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             </div>
 
             {/* Mobiele social icons */}
-            <div className="flex items-center justify-center mt-16 mb-16">
-              <div className="flex space-x-6">
+            <div className="flex justify-center mt-16 mb-16">
+              <div className="flex items-center gap-4">
                 <a
                   href="https://wa.me/31651329923"
                   target="_blank"
