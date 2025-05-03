@@ -41,7 +41,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             </div>
 
             {/* Mobiele social icons */}
-            <div className="flex justify-center mt-16 mb-16">
+            <div className="flex justify-center mt-12 mb-12">
               <div className="flex items-center gap-4">
                 <a
                   href="https://wa.me/31651329923"
@@ -55,7 +55,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
                 <img
   src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
   alt="IconLogo-Footer"
-  className="w-24 h-auto"
+  className="w-28 h-auto"
 />
 
                 <a
