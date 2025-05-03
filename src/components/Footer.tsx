@@ -41,7 +41,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             </div>
 
             {/* Mobiele social icons */}
-            <div className="flex justify-center mt-16 mb-16">
+            <div className="flex items-center justify-center mt-16 mb-16">
               <div className="flex space-x-6">
                 <a
                   href="https://wa.me/31651329923"
@@ -52,6 +52,12 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
                 >
                   <FaWhatsapp size={40} />
                 </a>
+                <img
+  src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
+  alt="IconLogo-Footer"
+  className="w-24 h-auto"
+/>
+
                 <a
                   href="https://www.instagram.com/innovisual.nl"
                   target="_blank"
