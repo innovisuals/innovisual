@@ -55,7 +55,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
                               <img
   src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
   alt="IconLogo"
-  className="w-28 h-auto"
+  className="w-18 h-auto"
 />
                 <a
                   href="https://www.instagram.com/innovisual.nl"
