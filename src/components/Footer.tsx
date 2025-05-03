@@ -109,6 +109,11 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
               >
                 <FaWhatsapp size={28} />
               </a>
+              <img
+  src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
+  alt="IconLogo"
+  className="w-12 h-auto"
+/>
               <a
                 href="https://www.instagram.com/innovisual.nl"
                 target="_blank"
