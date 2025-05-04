@@ -22,7 +22,7 @@ const OverOns: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">Over INNOVISUAL</h2>
           
           <div className="space-y-6 text-[#FFFCEF]/90 text-lg leading-relaxed text-center lg:text-left">
-            <h2 className="font-bold text-xl mb-2 text-center lg:text-left">
+            <h2 className="font-bold text-xl mb-4 text-center lg:text-left">
               SUBTIELE INNOVATIE. <span className="block md:inline">KRACHTIGE INDRUK.</span>
             </h2>
 
