@@ -12,15 +12,15 @@ const FAQ: React.FC = () => {
   const faqItems = [
     {
       question: "Wat kost het?",
-      answer: "Tijdens de pilot niets. De deelname is kosteloos en zonder verplichtingen. We verzamelen vooral feedback en laten het concept in de praktijk werken.",
+      answer: "Tijdens de pilotfase niets. De deelname is kosteloos en zonder verplichtingen. We verzamelen vooral data en feedback en laten het concept in de praktijk werken.",
     },
     {
-      question: "Wat gebeurt er na de pilot?",
+      question: "Wat gebeurt er na de pilotfase?",
       answer: "We bespreken samen wat het heeft opgeleverd en of het voor u interessant is om door te gaan. U zit nergens aan vast — het is vrijblijvend.",
     },
     {
-      question: "Werkt het altijd/bij iedereen?",
-      answer: "Het werkt op de meeste smartphones zonder app of installatie. iPhones vanaf iOS 13 en recente Androids openen het direct. Bij twijfel testen we het vooraf samen.",
+      question: "Werkt het bij iedereen?",
+      answer: "Op vrijwel alle recente smartphones opent de 3D-weergave direct, zonder dat je iets hoeft te installeren. iPhones vanaf iOS 13 en Android-toestellen vanaf versie 7.0 (met ARCore-ondersteuning) schakelen moeiteloos over naar de AR-modus.",
     },
     {
       question: "Wat levert het mij op?",
@@ -32,7 +32,8 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Waar komt de QR-code?",
-      answer: "Wij leveren een op maat gemaakte tafelkaart of display. U hoeft daar niets voor te regelen.",
+      answer: "Wij leveren indien gewenst een tafel display van A5-formaat met daarop de QR-code en een design in uw huisstijl.
+        U hoeft daar niets voor te regelen. Mocht u graag de QR-code op een andere manier verwerken is dit in overleg mogelijk.",
     },
     {
       question: "Kan ik zelf kiezen welk gerecht gescand wordt?",
@@ -40,7 +41,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Hoe lang duurt het?",
-      answer: "De pilot loopt ongeveer een maand. Dat is genoeg om reacties te zien en statistieken te verzamelen.",
+      answer: "De pilotfase loopt een maand. Dat is genoeg voor u om de impact te ervaren en genoeg voor ons om de data te verzamelen.",
     },
   ];
 
@@ -68,7 +69,7 @@ const FAQ: React.FC = () => {
                   onClick={() => toggleIndex(index)}
                   className="w-full flex justify-between items-center text-left min-h-[56px]"
                 >
-                  <span className="font-medium">{item.question}</span>
+                  <span className="font-bold text-xl">{item.question}</span>
                   {openIndex === index ? (
                     <ChevronUp className="text-[#FFFCEF]" size={20} />
                   ) : (
