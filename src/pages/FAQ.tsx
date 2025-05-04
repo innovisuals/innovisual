@@ -32,8 +32,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Waar komt de QR-code?",
-      answer: "Wij leveren indien gewenst een tafel display van A5-formaat met daarop de QR-code en een design in uw huisstijl.
-        U hoeft daar niets voor te regelen. Mocht u graag de QR-code op een andere manier verwerken is dit in overleg mogelijk.",
+      answer: "Wij leveren indien gewenst een tafel display van A5-formaat met daarop de QR-code en een design in uw huisstijl. U hoeft daar niets voor te regelen. Mocht u graag de QR-code op een andere manier verwerken is dit in overleg mogelijk.",
     },
     {
       question: "Kan ik zelf kiezen welk gerecht gescand wordt?",
