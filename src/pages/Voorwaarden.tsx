@@ -56,6 +56,7 @@ const Voorwaarden: React.FC = () => {
                   <li>INNOVISUAL maakt visuele beleving zichtbaar, met nadruk op eenvoud, stijl en impact.</li>
                   <li>De dienstverlening bestaat onder andere uit:</li>
                 </ol>
+                </div>
                 <ul className="list-disc list-inside ml-6">
                   <li>het scannen, optimaliseren en leveren van 3D-modellen van gerechten, desserts en dranken;</li>
                   <li>hosting en QR-code tracking;</li>
