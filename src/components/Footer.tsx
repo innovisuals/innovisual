@@ -43,14 +43,14 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             {/* Mobiele social icons */}
             <div className="flex justify-center mt-10 mb-10">
               <div className="flex items-center gap-4">
-                <a
-                  href="https://wa.me/31651329923"
+                 <a
+                  href="https://www.instagram.com/innovisual.nl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="WhatsApp"
+                  aria-label="Instagram"
                   className={`hover:scale-110 hover:opacity-80 transition-opacity ${textColor}`}
                 >
-                  <FaWhatsapp size={40} />
+                  <Instagram size={40} />
                 </a>
                 <a href="/#hero" className={`hover:scale-110 hover:opacity-80 transition-opacity ${textColor}`}>
                 <img
@@ -59,14 +59,14 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
   className="w-28 h-auto"
 />
 </a>
-                <a
-                  href="https://www.instagram.com/innovisual.nl"
+                    <a
+                  href="https://wa.me/31651329923"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label="WhatsApp"
                   className={`hover:scale-110 hover:opacity-80 transition-opacity ${textColor}`}
                 >
-                  <Instagram size={40} />
+                  <FaWhatsapp size={40} />
                 </a>
               </div>
             </div>
