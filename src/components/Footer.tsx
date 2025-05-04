@@ -41,7 +41,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             </div>
 
             {/* Mobiele social icons */}
-            <div className="flex justify-center mt-12 mb-12">
+            <div className="flex justify-center mt-10 mb-10">
               <div className="flex items-center gap-4">
                 <a
                   href="https://wa.me/31651329923"
@@ -52,12 +52,13 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
                 >
                   <FaWhatsapp size={40} />
                 </a>
+                <a href="/#hero" className={`hover:scale-110 hover:opacity-80 transition-opacity ${textColor}`}>
                 <img
   src={isIvory ? "/icon-logo_cool-teal_transparant.png" : "/icon-logo_ivory_transparant.png"}
   alt="IconLogo-Footer"
   className="w-28 h-auto"
 />
-
+</a>
                 <a
                   href="https://www.instagram.com/innovisual.nl"
                   target="_blank"
@@ -73,7 +74,7 @@ const Footer = ({ variant = "default" }: { variant?: "default" | "ivory" }) => {
             {/* Mobiel copyright */}
             <div className="text-center mt-12 mb-8">
               <p className={`text-xs leading-none tracking-tight opacity-70 ${textColor}`}>
-                &copy; 2025 INNOVISUAL.
+                &copy; 2025 INNOVISUAL. All rights reserved.
               </p>
             </div>
           </>
