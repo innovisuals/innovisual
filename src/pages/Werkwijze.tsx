@@ -25,7 +25,7 @@ const Werkwijze: React.FC = () => {
             Laat uw gasten gerechten op een geheel nieuwe manier ontdekken. 
             Een unieke ervaring die verrast en overtuigt. 
             Wij verzorgen het volledige proces: van 3D-scan tot de interactieve presentatie.
-            U hoeft enkel het gerecht klaar te zetten
+            U hoeft enkel het gerecht klaar te zetten.
           </p>
           
 <div className="w-full flex mt-6 justify-center">
