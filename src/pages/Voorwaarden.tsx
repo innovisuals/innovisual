@@ -82,7 +82,7 @@ const Voorwaarden: React.FC = () => {
 
               {/* Section 5: Intellectueel eigendom */}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 5: Intellectueel eigendom</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 5: Eigendom</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>Alle intellectuele eigendomsrechten op ontwerpen, 3D-modellen, visuals, technologie, scripts en bijbehorende materialen blijven eigendom van INNOVISUAL, tenzij uitdrukkelijk schriftelijk of digitaal anders overeengekomen.</li>
                   <li>Opdrachtgever verkrijgt uitsluitend een niet-exclusief, niet-overdraagbaar gebruiksrecht voor het doel waarvoor het materiaal is geleverd.</li>
@@ -154,7 +154,7 @@ const Voorwaarden: React.FC = () => {
 
               {/* Section 11: Toepasselijk recht en geschillen */}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 11: Toepasselijk recht en geschillen</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 11: Geschillenregeling</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>Op alle overeenkomsten met INNOVISUAL is uitsluitend Nederlands recht van toepassing.</li>
                   <li>Geschillen worden bij voorkeur in goed overleg en met wederzijds respect opgelost.</li>
