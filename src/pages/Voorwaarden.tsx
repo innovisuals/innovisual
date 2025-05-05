@@ -17,7 +17,7 @@ const Voorwaarden: React.FC = () => {
 
       <main className="section-container pt-32 relative z-0">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">
+          <h2 className="text-3xl md:text-6xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">
             Algemene voorwaarden
           </h2>
 
@@ -40,7 +40,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 2: Totstandkoming van de overeenkomst */}
+              {/* Section 2: Overeenkomst */}
               <div>
                  <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 2: Overeenkomst</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
@@ -50,9 +50,9 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 3: Diensten en werkwijze */}
+              {/* Section 3: Dienstenverlenning */}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 3: Diensten</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 3: Dienstenverlening</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>INNOVISUAL maakt visuele beleving zichtbaar, met nadruk op eenvoud, stijl en impact.</li>
                   <li>
@@ -69,7 +69,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 4: Prijzen en betaling */}
+              {/* Section 4: Betaling */}
               <div>
                  <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 4: Betaling</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
@@ -80,9 +80,9 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 5: Intellectueel eigendom */}
+              {/* Section 5: Auteursrecht */}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 5: Eigendom</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 5: Auteursrecht</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>Alle intellectuele eigendomsrechten op ontwerpen, 3D-modellen, visuals, technologie, scripts en bijbehorende materialen blijven eigendom van INNOVISUAL, tenzij uitdrukkelijk schriftelijk of digitaal anders overeengekomen.</li>
                   <li>Opdrachtgever verkrijgt uitsluitend een niet-exclusief, niet-overdraagbaar gebruiksrecht voor het doel waarvoor het materiaal is geleverd.</li>
@@ -90,15 +90,16 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 6: Gegevens en privacy */}
+              {/* Section 6: Privacy */}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 6: Gegevensverwerking</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 6: Privacy</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>INNOVISUAL verwerkt persoonsgegevens uitsluitend conform haar privacyverklaring en geldende wetgeving.</li>
                   <li>Er worden geen gegevens verzameld voor advertenties of persoonlijke tracking.</li>
                   <li>Bij het gebruik van QR-codes wordt anonieme informatie vastgelegd zoals aantal scans, tijdstippen en apparaattype.</li>
                   <li>INNOVISUAL kan tevens inzage krijgen in verkoopdata van gerechten die via de 3D-ervaring worden gepresenteerd. Deze inzichten worden uitsluitend gebruikt om de impact en effectiviteit van de dienst te meten en worden vertrouwelijk behandeld.</li>
                   <li>Opdrachtgever heeft het recht om inzage te vragen, gegevens te laten wijzigen of te laten verwijderen.</li>
+                  <li>De verwerking van persoonsgegevens en het gebruik van cookies wordt nader toegelicht in onze <a href="https://innovisual.nl/privacy" className="underline text-[#FFFCEF] hover:text-[#FFFCEF]/80">privacyverklaring</a>.</li>
                 </ol>
               </div>
 
@@ -113,27 +114,9 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 8: Overtreding van voorwaarden en sancties */}
+              {/* Section 9: Beëindiging*/}
               <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 8: Sancties</p>
-                <ol className="list-decimal list-inside pl-4 space-y-2">
-                  <li>
-                    Bij overtreding van deze algemene voorwaarden of andere gemaakte afspraken, is INNOVISUAL gerechtigd om zonder verdere aankondiging:
-                    <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-                      <li>de levering van diensten tijdelijk of blijvend op te schorten;</li>
-                      <li>het gebruiksrecht op geleverde content of technologie per direct in te trekken;</li>
-                      <li>reeds verleende kortingen of betalingsafspraken te herzien;</li>
-                      <li>de overeenkomst met onmiddellijke ingang te beëindigen.</li>
-                    </ul>
-                  </li>
-                  <li>Indien de overtreding leidt tot schade aan INNOVISUAL of derden, behoudt INNOVISUAL zich het recht voor deze schade op de Opdrachtgever te verhalen.</li>
-                  <li>Maatregelen genoemd in dit artikel laten het recht op aanvullende juridische stappen onverlet.</li>
-                </ol>
-              </div>
-
-              {/* Section 9: Beëindiging en annulering */}
-              <div>
-                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 9: Beëindiging</p>
+                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 8: Beëindiging</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
                   <li>Opdrachtgever kan een overeenkomst schriftelijk of digitaal annuleren met een minimale opzegtermijn van 7 dagen voor de geplande uitvoering.</li>
                   <li>INNOVISUAL behoudt zich het recht voor reeds gemaakte kosten in rekening te brengen.</li>
@@ -142,7 +125,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 10: Overmacht */}
+              {/* Section 9: Overmacht */}
               <div>
                  <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 10: Overmacht</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
@@ -152,7 +135,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 11: Toepasselijk recht en geschillen */}
+              {/* Section 10: Geschillenregeling */}
               <div>
                  <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 11: Geschillenregeling</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
@@ -164,7 +147,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 12: Wijziging van voorwaarden */}
+              {/* Section 11: Wijzigingen */}
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 12: Wijzigingen</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
@@ -174,7 +157,7 @@ const Voorwaarden: React.FC = () => {
                 </ol>
               </div>
 
-              {/* Section 13: Slotbepalingen */}
+              {/* Section 12: Slotbepalingen */}
               <div>
                  <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 pt-6">Artikel 13: Slotbepalingen</p>
                 <ol className="list-decimal list-inside pl-4 space-y-2">
