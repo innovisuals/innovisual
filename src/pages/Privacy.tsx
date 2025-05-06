@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
@@ -16,65 +17,100 @@ const Privacy: React.FC = () => {
 
       <main className="section-container pt-32 relative z-0">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">
+          <h2 className="text-3xl md:text-6xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">
             Privacy & Cookies
           </h2>
 
-          <div className="space-y-6 text-[#FFFCEF]/90 text-lg leading-relaxed text-justify lg:text-left">
-            <h3 className="uppercase font-semibold tracking-wide text-[#FFFCEF] text-center lg:text-left">
-              Jouw gegevens, jouw regie.
+          <div className="text-[#FFFCEF]/90 text-lg leading-relaxed text-justify lg:text-left tracking-tight">
+            <h3 className="uppercase font-semibold tracking-wide text-[#FFFCEF] text-center lg:text-left blur-fade-in mb-6">
+              Uw gegevens, uw regie.
             </h3>
 
-            <p>
-              Wanneer je contact met ons opneemt via het formulier op de website, kunnen we de volgende persoonsgegevens verzamelen:
-              <ul className="list-disc list-inside mt-2">
+            <div className="space-y-0">
+              <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 mt-12">Privacy</p>
+<div className="h-3" /> 
+              <p>
+                Wij vinden het erg belangrijk dat uw gegevens en privacy op een 
+                vertrouwelijke en respectvolle manier behandeld worden. Op deze 
+                pagina vindt u daarom onze privacyverklaring, waarin we u laten 
+                weten welke gegevens we van u verzamelen en hoe wij met uw gegevens 
+                omgaan. Ook leggen we uit welke keuzes en rechten u heeft met 
+                betrekking tot deze gegevens.
+              </p>
+<div className="h-3" /> 
+              <p>
+                Wanneer u contact met ons opneemt via het formulier op de website, 
+                kunnen we de volgende persoonsgegevens verzamelen:
+              </p>
+
+              <ul className="list-disc list-inside mb-6">
                 <li>Naam</li>
                 <li>E-mailadres</li>
                 <li>Telefoonnummer</li>
                 <li>Voorkeur voor contactwijze</li>
               </ul>
-            </p>
+<div className="h-3" />
+              <p className="mb-0">
+                Bij het scannen van een QR-code worden anonieme gegevens geregistreerd, zoals:
+              </p>
 
-            <p>
-              Bij QR-scans (bijvoorbeeld op een menukaart) verzamelen we anonieme gegevens zoals:
-              <ul className="list-disc list-inside mt-2">
+              <ul className="list-disc list-inside mb-6">
                 <li>Tijdstip van de scan</li>
                 <li>Aantal scans per dag</li>
                 <li>Type apparaat of browser</li>
               </ul>
-            </p>
+              
+<div className="h-3" /> 
+              
+              <p>
+                We bewaren deze gegevens tot maximaal twee maanden na afloop van de pilot, 
+                tenzij u ervoor kiest klant te blijven of het contact wordt voortgezet. 
+                Wij gebruiken deze gegevens om contact met u op te nemen, het gebruik van 
+                QR-codes te analyseren en onze dienstverlening te verbeteren.
+              </p>
 
-            <p><strong>Waarom verzamelen we dit?</strong><br />
-              Om contact op te nemen na het formulier, deelname aan de pilot te regelen, gebruik te analyseren via QRTrac, en onze dienstverlening te verbeteren.
-            </p>
+              <div className="h-12" /> {/* 3 enters visueel */}
 
-            <p><strong>Bewaartermijn:</strong> Maximaal twee maanden na de pilot, tenzij je klant wordt of langer contact houdt.</p>
+              <p className="text-2xl md:text-3xl font-bold text-[#FFFCEF] leading-relaxed mb-2 mt-6">Cookies</p>
+<div className="h-3" />
+              <p className="mb-0">
+                Onze website gebruikt alleen functionele cookies. Wij kiezen ervoor 
+                om geen cookiebanner te tonen, omdat:
+              </p>
 
-
-            <p><strong>Cookies:</strong><br />
-              Onze website gebruikt alleen functionele cookies.<br />
-              Wij kiezen ervoor om geen cookiebanner te tonen, omdat:<br />
-              <ul className="list-disc list-inside mt-2">
+              <ul className="list-disc list-inside mb-6">
                 <li>we kiezen voor eenvoud zonder vervelende pop-ups</li>
                 <li>we geen gegevens gebruiken voor advertenties of persoonlijke tracking</li>
-                <li>de cookies uitsluitend nodig zijn om de site technisch goed te laten werken</li>
+                <li>de cookies uitsluitend nodig zijn om de website technisch goed te laten werken</li>
               </ul>
-            </p>
+<div className="h-3" /> 
+              <p>
+                Op deze manier zorgen we voor een zo gebruiksvriendelijk mogelijke ervaring,
+                zonder onnodige onderbrekingen. Deze cookies slaan geen persoonsgegevens op.
+              </p>
 
-            <p><strong>Jouw rechten:</strong><br />
-              Je mag je gegevens inzien, laten aanpassen of verwijderen, bezwaar maken, of toestemming intrekken. Stuur een e-mail naar <a href="mailto:hello@innovisual.nl" className="underline">hello@innovisual.nl</a>.
-            </p>
 
-            <p><strong>Wijzigingen:</strong> We kunnen deze verklaring aanpassen. De actuele versie staat altijd op deze pagina.</p>
-          </div>
 
-          <div className="mt-24">
-            <Button variant="secondary" asChild className="bg-[#FFFCEF] text-[#5c899d] hover:bg-[#FFFCEF]/90">
-              <Link to="/" className="flex items-center gap-2">
-                <ArrowLeft size={16} />
-                Terug naar INNOVISUAL
-              </Link>
-            </Button>
+              
+              <div className="h-12" /> {/* 3 enters visueel */}
+
+              <p className="mt-6">
+                U heeft het recht om uw gegevens in te zien, te laten aanpassen of verwijderen, 
+                bezwaar te maken of uw toestemming in te trekken. Heeft u vragen of opmerkingen
+                over dit privacybeleid of over hoe wij met gegevens omgaan? Neem dan contact
+                met ons op via{" "}
+                <a href="mailto:hello@innovisual.nl" className="underline">hello@innovisual.nl</a>.
+              </p>
+            </div>
+
+            <div className="mt-24">
+              <Button variant="secondary" asChild className="bg-[#FFFCEF] text-[#5c899d] hover:bg-[#FFFCEF]/90">
+                <Link to="/" className="flex items-center gap-2">
+                  <ArrowLeft size={16} />
+                  Terug naar INNOVISUAL
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </main>
