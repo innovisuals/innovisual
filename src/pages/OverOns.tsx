@@ -25,7 +25,7 @@ const OverOns: React.FC = () => {
             <h2 className="font-bold text-xl mb-4 text-center lg:text-left">
               SUBTIELE INNOVATIE. <span className="block md:inline">KRACHTIGE INDRUK.</span>
             </h2>
-
+<div className="h-3"/>
             <div className="mb-3 text-justify lg:text-left">
               <p> INNOVISUAL is ontstaan uit een gevoel: <br className="hidden md:block" />
               het moment waarop visuele presentatie zó krachtig is, dat verdere uitleg overbodig wordt.</p>
