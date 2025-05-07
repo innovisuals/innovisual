@@ -57,7 +57,7 @@ const FAQ: React.FC = () => {
 
       <main className="section-container pt-32 relative z-0">
         <div className="w-full max-w-xl mx-auto">
-          <h2 className="text-3xl md:text-6xl font-bold mb-8 animate-fade-in text-center lg:text-left">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 animate-fade-in text-center lg:text-left">
             Veelgestelde vragen
           </h2>
 
