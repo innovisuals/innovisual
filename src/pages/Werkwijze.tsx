@@ -19,7 +19,7 @@ const Werkwijze: React.FC = () => {
 
       <main className="section-container pt-32 relative z-0">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">Onze werkwijze</h2>
+          <h2 className="text-3xl md:text-6xl font-bold mb-8 animate-fade-in text-center lg:text-left text-[#FFFCEF]">Onze werkwijze</h2>
           
           <p className="italic text-lg mb-12 lg:text-left">
             Laat uw gasten gerechten op een geheel nieuwe manier ontdekken. 
